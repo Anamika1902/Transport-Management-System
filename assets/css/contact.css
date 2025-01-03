@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+     
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.elements{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    background:#ffff ;/*background colour*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemlist{
+   width: 100%;
+   height: 551px;
+    max-width: 830px;
+    background: #ffff;
+    border-radius: 20px;
+    box-shadow: 0 0 21px 11px rgba(0,0,0,.4 ) ;
+    overflow: hidden;
+    grid-template-columns: repeat(2,1fr);/*help in divide*/
+    display: grid;
+    z-index: 1000;
+}
+.cells{
+    background: white;/* colour of divided part*/
+}
+.submit_form{
+    background:rgb(220, 227, 14);/*colour of 2nd part*/
+}
+.onetext{
+    
+    padding-left: 22px;
+    padding-top: 22px;
+    font-size: 36px;
+    color:blue ;
+    font-weight: 700;
+}
+.pic{
+    height: 320px;
+    width: 300px;
+    padding: 1px 19px;
+}
+.social_media{
+    display: flex;
+    list-style: none;
+
+}
+ ul li{
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+ i{
+    background: rgb(14, 116, 156);
+    padding: 4px;
+    border-radius: 6px;
+    transition: 4s ;
+    color: aliceblue;/*for icon facebook ka f colour*/
+}
+.social_media i:hover{
+    background: #f3eaea1b;
+    color: hsl(135, 89%, 53%);
+}
+.social_media a{
+    text-decoration: none;
+}
+.twotext{
+    font-weight: 450;
+    background: blue;
+    padding-left: 25px;
+}
+.heading{
+    font-size: 26px;
+    position: relative;
+    top:10px;  /*positon for heading*/
+    left: 20px;
+    padding-top:10px ;
+    color:white ; /*font-colour of contact*/ 
+}
+form{
+    padding: 0 46px; /*shift the whole form*/
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.fields{
+   height: 30px;
+   width: 61%;
+   margin: 30px 0;  /*for space between the fields and contact us title*/
+   position:relative;
+}
+.field1{
+    width: 100%;  /*for inputboxes*/
+    height: 100%;
+    background: transparent;  /*for 3 staring fields*/
+    border:2px solid white;
+    border-radius:22px ;   /* circle the border*/
+    outline:none;
+    padding-left: 20px;  /* padding from yellow border to input boxes*/
+    color: azure;
+    font-size: 17px;
+}
+.fields label{
+    position:absolute;
+    top: 50%;
+    left: 10px;
+    padding-left: 10px;   /* for padding bet font email and its box*/
+    transform: translateY(-50%);   /* for center the font between boxes up and down center*/
+    font-size: 16px;/* size of font */
+    font-weight: 500;
+    color:white;  /*font colour of inputboxes*/
+    transition: .4s;  
+}
+.fields .field1:focus ~ label,
+.fields .field1:valid ~label {
+    top:-2px;  /* for small the text by top*/
+    left:10px;
+    background:rgb(220, 227, 14);   /*for background of the text should be same as divided colour that is yellow*/
+    font-weight: 502;
+    font-size: 11px;
+    padding:4px ;
+}
+textarea.field1{
+    resize:none;
+    height: 150px;
+    overflow: auto;
+}
+.btn2{
+    position: relative;
+    top: 110px;
+    height: 47px;
+    width: 38%;
+    color: paleturquoise;/*button colour*/
+    cursor: pointer;
+    font-weight: 600;
+    font-style: bold;
+    background: blue;
+    outline: none;
+    border: none;
+}
